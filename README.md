@@ -1,6 +1,8 @@
 ## Using Deep Learning to Predict Water Point functionality from an Image
 
-A Python notebook with the Keras model that we used to predict water point functionality from an image. The images we used are not publicly available but you can run the same experiments against the [Kaggle Cats vs. Dogs dataset](https://www.kaggle.com/c/dogs-vs-cats/data). The image preparation code that we've used is available in this [fork of gigasquid's kagge-cats-dogs](https://github.com/pld/kaggle-cats-dogs) repository.
+A [Jupyter notebook](https://nbviewer.jupyter.org/github/pld/dl4d/blob/master/image-classification.ipynb) with the Keras model that we used to predict water point functionality from an image. The images we used are not publicly available but you can run the same experiments against the [Kaggle Cats vs. Dogs dataset](https://www.kaggle.com/c/dogs-vs-cats/data). The image preparation code that we've used is available in this [fork of gigasquid's kagge-cats-dogs](https://github.com/pld/kaggle-cats-dogs) repository.
+
+
 
 Default model is a feed forward neural network with four 2D convolutional layers of 32, 32, 64, and 128 nodes, all using a rectified linear unit activation function and a 2 by 2 pool size. This is followed by a fully connected layer of 128 nodes and a dropout layer to prevent overfitting. Finally, we use a sigmoid activation function to model the single class binary output of functioning or not-functioning.
 
